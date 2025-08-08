@@ -20,6 +20,10 @@ const upload = multer({ storage });
 
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('File upload service is running. Use POST /upload to upload files.');
+});
+
 app.post('/upload', upload.single('file'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded.' });

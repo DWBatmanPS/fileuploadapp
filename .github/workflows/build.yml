@@ -34,9 +34,8 @@ jobs:
 
       - name: Test POST request with curl
         run: |
-          RESPONSE=$(curl  -X POST https://localhost:8000/ \
+          curl --fail --silent --showerror -X POST https://localhost:3000/upload \
             -F "file=@testfile.txt"
-          echo "Response: $RESPONSE"
 
       - name: Set lower case org name
         id: org-name
