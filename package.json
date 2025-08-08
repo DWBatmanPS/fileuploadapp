@@ -1,0 +1,22 @@
+{
+  "name": "fileuploadapp",
+  "version": "1.0.0",
+  "description": "A file upload app for testing purposes",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [
+    "POST",
+    "File Upload",
+    "Express",
+    "Multer",
+    "Node.js"
+  ],
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^2.0.2"
+  },
+  "author": "GDBatmanPS",
+  "license": "ISC"
+}
