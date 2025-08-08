@@ -34,7 +34,7 @@ jobs:
 
       - name: Test POST request with curl
         run: |
-          curl --fail --silent --showerror -X POST https://localhost:3000/upload \
+          curl --fail --silent --show-error -X POST https://localhost:3000/upload \
             -F "file=@testfile.txt"
 
       - name: Set lower case org name
